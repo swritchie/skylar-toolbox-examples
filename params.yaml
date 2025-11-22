@@ -1,14 +1,38 @@
 data:
+  columns_dt:
+    adult_target_sr: 'income'
+    tmp_sr: 'tmp'
   directory_sr: 'data'
 
 models:
   directory_sr: 'models'
 
 notebooks:
+  random_state_it: &random_state_it 0
+  basic_config_dt:
+    format: '%s(asctime)s - %(levelname)s - %(msg)s'
+    level: 20
+  cat_boost_dt:
+    depth: 2
+    iterations: 100
+    learning_rate: !!float 2e-2
+    random_state: *random_state_it 
+    use_best_model: false
+    verbose: 10
+  classification_metrics_lt:
+    - AUC
+    - BalancedAccuracy
+    - Logloss
+    - PRAUC
+    - Precision
+    - Recall
   directory_sr: 'notebooks'
 
 notes:
   directory_sr: 'notes'
+
+outputs:
+  directory_sr: 'outputs'
 
 scripts:
   directory_sr: 'scripts'
