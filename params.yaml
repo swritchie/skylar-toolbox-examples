@@ -1,0 +1,17 @@
+data:
+  directory_sr: 'data'
+
+models:
+  directory_sr: 'models'
+
+notebooks:
+  directory_sr: 'notebooks'
+
+notes:
+  directory_sr: 'notes'
+
+scripts:
+  directory_sr: 'scripts'
+
+secrets:
+  directory_sr: 'secrets'
