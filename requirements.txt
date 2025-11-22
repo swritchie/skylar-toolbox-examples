@@ -1,0 +1,2 @@
+jupyterlab
+skylar-toolbox[complete] @ git+https://github.com/swritchie/skylar-toolbox.git
